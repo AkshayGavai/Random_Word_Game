@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Word Game</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--First Introduction page-->
+  <div id="introDiv">
+    <p>Hi!</p>
+    <button id="letsPlay" class="btn btn-primary" onclick="startPlaying()">
+      Let's play
+    </button>
+    <br />
+    <br />
+    <!--=Leaderboard-->
+    <div id="leaderBoard" class="container col-sm-6 col-sm-offset-3">
+      <p>Highscores</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="topName"></td>
+            <td id="topScore"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--Main Page-->
+  <div id="mainGame">
+    <h3><span id="seconds">0</span></h3>
+    <h1 id="givenWord"></h1>
+    <div class="form-group">
+      <div class="col-sm-8 col-sm-offset-2">
+        <input type="text" class="form-control" id="usr" placeholder="Enter above word" disabled />
+      </div>
+      <br />
+    </div>
+    <br />
+    <div id="keyboard" class="col-sm-8 col-sm-offset-2"></div>
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <button id="backSpc" class="btn btn-info col-sm-2 col-sm-offset-3" onclick="backSpc()">
+          Backspace
+        </button>
+        <button id="pauseBtn" class="btn btn-info col-sm-2" onclick="pausePlay()">
+          Pause
+        </button>
+        <button id="stpBtn" class="btn btn-danger col-sm-2" onclick="stopPlay()">
+          Stop
+        </button>
+      </div>
+
+      <div id="controlBtns" class="row">
+        <button type="submit" class="btn btn-info col-sm-5 col-sm-offset-1" id="submitBtn" onclick="checkWord()">
+          Submit
+        </button>
+        <button type="button" class="btn btn-info col-sm-5" id="skipBtn" onclick="skipWord()">
+          Skip
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="words.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
