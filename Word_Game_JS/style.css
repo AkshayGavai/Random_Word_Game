@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  width: 100%;
+}
+
+body {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightcyan;
+}
+
+p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+button {
+  margin: 2px;
+}
+
+th {
+  text-align: center;
+}
