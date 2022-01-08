@@ -1,4 +1,4 @@
-# Randome Word Game
+# Randome Word Game Project
 # Introduction of Project  
  The objective of the project was to create web based game using javascript, html, css as FUN  
  
